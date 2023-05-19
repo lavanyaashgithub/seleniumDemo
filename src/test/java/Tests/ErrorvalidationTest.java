@@ -38,6 +38,7 @@ public class ErrorvalidationTest extends BaseTest {
 		String productname = "ZARA COAT 3";
 		String product = "apple";
 		int as= 569;
+		int sw= 105;
 		Productcatalog pc = lp.loginapplication("anshika@gmail.com", "Iamking@000");
 		List<WebElement> products = pc.getproductlist();
 		pc.getproductname(productname);
