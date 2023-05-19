@@ -21,6 +21,7 @@ public class ErrorvalidationTest extends BaseTest {
 	public void loginError() throws InterruptedException, IOException {
 
 		String productname = "ZARA COAT 3";
+		String produc = "carrot";
 		lp.loginapplication("aswinithumala@gmail.com", "Aswini123");
 		lp.getErrorMessage();
 		Assert.assertEquals("Incorrect email or password.", lp.getErrorMessage());
