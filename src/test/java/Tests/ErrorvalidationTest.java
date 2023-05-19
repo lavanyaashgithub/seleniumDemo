@@ -21,7 +21,11 @@ public class ErrorvalidationTest extends BaseTest {
 	public void loginError() throws InterruptedException, IOException {
 
 		String productname = "ZARA COAT 3";
+
 		String produc = "carrot";
+
+		String product = "apple";
+
 		lp.loginapplication("aswinithumala@gmail.com", "Aswini123");
 		lp.getErrorMessage();
 		Assert.assertEquals("Incorrect email or password.", lp.getErrorMessage());
@@ -32,6 +36,7 @@ public class ErrorvalidationTest extends BaseTest {
 	public void Errorproduct() throws InterruptedException, IOException {
 
 		String productname = "ZARA COAT 3";
+		String product = "apple";
 		Productcatalog pc = lp.loginapplication("anshika@gmail.com", "Iamking@000");
 		List<WebElement> products = pc.getproductlist();
 		pc.getproductname(productname);
